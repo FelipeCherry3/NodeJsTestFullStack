@@ -14,6 +14,7 @@ const addTask = async (request, response) => {
     return response.status(201).json(createdTask);
 };
 
+// Função para Deletar uma Tarefa
 const deleteTask = async (request,response) => {
     const { id } = request.params;
 
@@ -21,6 +22,7 @@ const deleteTask = async (request,response) => {
     return response.status(204).json();
 };
 
+// Função para Atualizar uma Tarefa
 const updateTask = async (request, response) => {
     const { id } = request.params;
     await tasksModel.updateTask(id, request.body);
