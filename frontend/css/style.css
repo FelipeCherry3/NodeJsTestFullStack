@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background-image: url("/frontend/images/willian-justen-de-vasconcellos-Bm63Av7jFdY-unsplash\ \(1\).jpg");
+    background-repeat: no-repeat;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.add-form {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 15px;
+    width: 100%;
+}
+
+input {
+    width: calc(100% - 100px);
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+button[type="submit"] {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.05);
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.616);
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    animation: 0.3s;
+    border: solid;
+    background-color: rgb(82, 82, 82);
+
+    color: rgba(255, 255, 255, 0.616);
+    font-size: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    cursor: pointer;
+}
