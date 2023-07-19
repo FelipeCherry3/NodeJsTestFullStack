@@ -63,3 +63,53 @@ button[type="submit"]:hover {
     font-weight: 500;
     cursor: pointer;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    padding: 10px 15px;
+    border: 1px solid #fffcfc;
+    text-align: center;
+}
+
+td {
+    color: #333;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #a5a5a580;
+}
+
+select {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: #a5a5a580;
+}
+select:hover {
+    background-color: #ddd;
+}
+
+.btn-action {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn-action:nth-child(1){
+    background-color: rgba(255, 166, 0, 0.541);
+    margin-right: 5px;
+}
+.btn-action:nth-child(2){
+    background-color: rgba(255, 0, 0, 0.432);
+}
