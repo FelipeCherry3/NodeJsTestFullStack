@@ -7,6 +7,8 @@ const fetchTasks = async () => {
     return tasks;
 }
 
+//Criando elemento HTML utilizando parametros para modificação
+
 const createElement = (tag, innerText = '', innerHTML ='') => {
     const element = document.createElement(tag);
     if(innerText) {
@@ -19,6 +21,7 @@ const createElement = (tag, innerText = '', innerHTML ='') => {
     return element;
 }
 
+//Objeto do tipo task pra testes
 const task =  {
     id: 1,
     tittle: 'Varrer o cu',
@@ -26,6 +29,8 @@ const task =  {
     status: 'desinformado'
 }
 
+//Função responsavel por receber um objeto tipo task, desconstrui-lo e apartir disso
+//Construir um bloco HTML de uma Linha (Row) na nossa lista de Tarefas com campos dinâmicos
 const createRow = (task) => {
 
     const { id, tittle, created_at, status } = task;
