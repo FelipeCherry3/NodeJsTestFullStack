@@ -36,6 +36,7 @@ const deleteTask = async(id) => {
     alert('Tarefa deletada' + id);
     loadTask();
 }
+
 //Atualiza Tarefa
 const updateTask = async({ id, nome, created_at, status }) => {
 
@@ -48,6 +49,7 @@ const updateTask = async({ id, nome, created_at, status }) => {
     alert('A tarefa ' + nome + 'Foi atualizada');
     loadTask();
 }
+
 //Formatação da Data
 const formatedDate = (dateUTC) => {
     const options = { dateStyle: 'long', timeStyle: 'short'}
